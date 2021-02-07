@@ -102,6 +102,7 @@ main {
     height: auto;
 }
 .card_text-container h2 {
+    padding-top: 20px;
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
@@ -112,76 +113,7 @@ main {
     line-height: 16px;
     padding-top: 5px;
     font-weight: 400;
-    Principais propriedades do CSS
-Propriedades de background
-Propriedades de fonte
-Propriedades de texto
-Propriedades de espaçamento
-Propriedades de exibição
-Propriedades de exibição
-backgroundcolor: #7159c1;
-fontsize: 20px;
-fontweight: bold;
-fontfamily: Arial;
-font: 20px Arial bold;
-padding: 10px 20px;
-display: block;
-color: #7159c1;
-lineheight: 24px;
-letterspacing: 2px;
-textalign: center;
-textdecoration: underline;
-opacity: 0.5;
-width: 100px / maxwidth: 80% / minwidth: 10vw;
-height: 100px / maxheight: 80% / minheight: 10vh;
-border: 1px solid #FFF;
-position: absolute;
-borderradius: 5px 10px;
-margin: 10px 20px;
-backgroundimage: url(fundo.png);
-backgroundposition: center 20%;
-backgroundrepeat: norepeat;
-background: #7159c1 url(fundo.png) norepeat center 20%;
-Define uma cor de fundo para o elemento.
-Define o tamanho do texto.
-Define o peso do texto. Principais valores possíveis: normal, bold, 400, 500, 600, 700.
-Define a fonte utilizada no texto. A fonte precisa estar instalada na máquina do usuário ou importada de um endereço externo.
-Atalho para definir múltiplas propriedades de fonte em uma única linha.
-Define o espaçamento interno de um elemento. O espaçamento interno recebe também a cor de fundo do elemento.
-Define o tipo de exibição do elemento.
-Define a cor do texto.
-Define o tamanho da linha do texto.
-Define o espaçamento de cada caractere no texto.
-Define o alinhamento horizontal do texto. Principais valores possíveis: left, center, right;
-Define uma decoração ao texto. Principais valores possíveis: underline, line-through, none.
-Define a opacidade do elemento, de 0 (zero) até 1 (100%).
-Define a largura inicial, largura máxima e largura mínima de um elemento.
-Define a altura inicial, largura máxima e largura mínima de um elemento.
-Define o tamanho, estilo e cor da borda do elemento. Os principais estilos da borda podem ser: solid, dashed, dotted, double.
-Define como um elemento vai se posicionar em relação ao elemento pai (elemento que envolve o mesmo).
-Define o arredondamento das bordas em sentido horário partindo do canto superior esquerdo.
-Define o espaçamento externo de um elemento. Os valores possíveis seguem a mesma regra do padding.
-Obs.: A borda do elemento é aplicada entre o espaçamento interno (padding) e o externo (margin).
-Define uma imagem de fundo para o elemento.
-Define a posição da imagem de fundo, o primeiro valor determina a posição do eixo horizontal e o segundo valor no eixo vertical.
-Além das unidades de medidas do próprio CSS no eixo horizontal pode-se usar left, center e right e, no vertical, top, center e bottom.
-Define se a imagem de fundo deve se repetir ou não. Principais valores possíveis: no-repeat, repeat, repeat-x, repeat-y.
-Atalho para definir múltiplas propriedades de background em uma única linha.
-Formatos de cores
-Hexadecimal:
-#7159c1
-Em pixels:
-20px
-Em centímetros:
-2cm
-Em milímetros:
-20mm
-Largura da janela:
-4vw (equivale a 5% da largura da janela do browser)
-Altura da janela:
-4vh (equivale a 5% da altura da janela do browser)
-Percentual: 40%
-(equivale a 40% do tamanho do elemento pai)
+    
 }
 
 /* FOOTER */
