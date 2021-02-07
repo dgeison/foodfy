@@ -1,0 +1,54 @@
+{% extends "layout.njk "%}
+
+{%block head %}
+
+ <title>Foodfy - {{}}</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+{% endblock %}
+
+{% block content %}
+
+        <section>
+            <div class="banner">
+                <div class="banner_text">
+                    <div class="banner_title">
+                        <h1>As melhores receitas</h1>
+                    </div>
+                    <div class="banner_info">
+                        <p>
+                            Aprenda a construir os melhores pratos com receitas
+                            criadas por profissionais do mundo inteiro.
+                        </p>
+                    </div>
+                </div>
+                <div class="banner_image">
+                    <img src="assets/chef.png" alt="" />
+                </div>
+            </div>
+        </section>
+        <div class="wrapper">
+            <h1>Mais acessadas</h1>
+        </div>
+        <main>
+            <div class="cards">
+                <div class="card_image-container">
+                    <img src="assets/burger.png" alt="" />
+                </div>
+                <div class="card_text-container">
+                    <h2>Triplo Bacon Burger</h2>
+                </div>
+                <div class="card_info">
+                    <p>por Jorge Relato</p>
+                </div>
+            </div>
+
+            
+        </main>
+
+        
+
+
+<script src="/scripts.js"></script>
+
+{% endblock %}
