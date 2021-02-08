@@ -167,9 +167,11 @@ main {
   font-size: 18px;
   line-height: 28px;
   color: #444444;
+  list-style-position: inside;
 }
 
 .recipeCard p {
+  padding-top: 20px;
   font-size: 18px;
   color: #444444;
   line-height: 28px;
@@ -185,6 +187,7 @@ footer {
 }
 
 footer p {
+  
   font-size: 14px;
   line-height: 16px;
   color: #999999;
