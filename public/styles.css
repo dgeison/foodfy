@@ -103,7 +103,7 @@ main {
 .card_image-container img {
   border-radius: 15px;
   max-width: 100%;
-  height: auto;
+  
 }
 .card_text-container h2 {
   padding-top: 20px;
@@ -128,7 +128,8 @@ main {
 }
 
 .recipeCard_image-container img {
-  width: 100%;
+  max-width: 100%;
+  height: 220px;
   border-radius: 15px;
   height: auto;
 }

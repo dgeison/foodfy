@@ -1,3 +1,4 @@
+const { response } = require("express");
 const express = require("express");
 const nunjucks = require("nunjucks");
 
@@ -19,11 +20,27 @@ nunjucks.configure("views", {
 // })
 
 server.get("/", function (req, res) {
-  return res.render("index");
+  return res.render("sobre", { receitas: receitas });
 });
 
 server.get("/receitas", function (req, res) {
-  return res.render("receitas", { items: receitas });
+  return res.render("receitas", { receitas: receitas });
+});
+
+server.get("/receita", function (req, res) {
+  //pegar a id
+  const id = req.query.id;
+
+  const receita = receitas.find(function (receita) {
+    if (receita.id == id) {
+      return true;
+    }
+  });
+
+  if (!receita) {
+    return res.send("Receita não encontrada!");
+  }
+  return res.render("receita", { receita });
 });
 
 server.listen(5000, function () {
