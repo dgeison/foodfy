@@ -4,11 +4,7 @@
 
   <title>Foodfy -
 
-    {% for receita in receitas %}
-
-      {{receita.title}}
-
-    {% endfor %}
+    
 
   </title>
 
@@ -32,26 +28,26 @@
           </div>
         </div>
 
-        <div class="recipeCardTexts">
-          <h2 class="recipeCard_Title">Ingredientes</h2>
-          <span>Esconder</span>
-        </div>
+          <div class="recipeCardTexts">
+            <h2 class="recipeCard_Title">Ingredientes</h2>
+            <span>Esconder</span>
+          </div>
         {% for ingredient in receita.ingredients %}
           <ul class="recipeText-ul">
             <li>{{ingredient}}</li>
           </ul>
         {% endfor %}
 
-        <div class="recipeCardTexts">
+       <div class="recipeCardTexts">
           <h2 class="recipeCard_Title">Modo de preparo</h2>
           <span>Mostrar</span>
         </div>
-        {% for item in receita %}
-          <ul class="recipeText-ul">
+          {% for item in receita %}
+        <ul class="recipeText-ul">
             <li>
               {{item.preparation}}</li>
-          </ul>
-        {% endfor %}
+        </ul>
+          {% endfor %}
 
         <div class="recipeCardTexts">
           <h2 class="recipeCard_Title">Informações adicionais</h2>
@@ -61,7 +57,7 @@
 
       </div>
 
-    {% endfor %}
-  </div>
+      {% endfor %}
+    </div>
 
-{% endblock %}
+  {% endblock %}
