@@ -38,10 +38,10 @@
                 <h2 class="recipeCard_Title">Modo de preparo</h2>
                 <span>Mostrar</span>
             </div>
-            {% for item in receita %}
+            {% for item in receita.preparation %}
                 <ul class="recipeText-ul">
                     <li>
-                        {{item.preparation}}</li>
+                        {{item}}</li>
                 </ul>
             {% endfor %}
 
